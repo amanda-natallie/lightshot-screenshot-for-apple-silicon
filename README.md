@@ -54,7 +54,7 @@ Press a tool's key again, or click its button again, to go back to moving the se
 Shotmark builds from source with Xcode or just the Command Line Tools (`xcode-select --install`).
 
 ```sh
-git clone https://github.com/<you>/shotmark.git
+git clone https://github.com/amanda-natallie/lightshot-screenshot-for-apple-silicon.git shotmark
 cd shotmark
 scripts/create-signing-cert.sh   # once: stable local signature (see below)
 scripts/build-app.sh --install   # → /Applications/Shotmark.app
@@ -128,8 +128,7 @@ CI runs the same script on every push. Contributions are welcome: open an issue 
 
 ## Roadmap
 
-- [ ] Signed & notarized release builds
-- [ ] Mac App Store (sandboxed build)
+- [ ] Prebuilt release downloads
 - [ ] Blur / pixelate tool
 - [ ] Numbered step markers
 - [ ] Magnifier loupe while selecting
