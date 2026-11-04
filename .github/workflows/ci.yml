@@ -4,7 +4,8 @@ on:
   pull_request:
 jobs:
   check:
-    runs-on: macos-15
+    runs-on: macos-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - run: scripts/check.sh
